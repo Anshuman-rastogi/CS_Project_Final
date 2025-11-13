@@ -9,7 +9,7 @@ def generate_bill_window():
     # Create a new window for generating bills
     win = Toplevel()
     win.title("Generate Bill")
-    win.geometry("600x700")
+    win.geometry("600x650")
     win.config(bg="#F8FAFC")
 
     Label(win, text="Generate Bill", font=("Arial", 18, "bold"), bg="#F8FAFC", fg="#0A4D68").pack(pady=10)
