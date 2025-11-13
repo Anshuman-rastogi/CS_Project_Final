@@ -1,0 +1,22 @@
+==============================================
+            AutoCare Detailing Centre         
+==============================================
+Bill ID      : 30
+Date & Time  : 2025-11-13 17:09:29
+
+Customer ID  : 5
+Customer Name: customer
+Vehicle Model: car
+Vehicle No.  : TEST01
+----------------------------------------------
+Services Availed:
+  • PPF (Paint Protection Film)
+  • Interior Restoration
+----------------------------------------------
+Total Amount : ₹76800.0
+----------------------------------------------
+
+Thank you for choosing AutoCare!
+We appreciate your trust in our services.
+
+==============================================

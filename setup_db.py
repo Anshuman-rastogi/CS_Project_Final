@@ -29,6 +29,20 @@ def setup_db():
 
     # ---------- Create tables ----------
 
+    # Admin Table
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS admin (
+        admin_id INT AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(50) UNIQUE NOT NULL,
+        password VARCHAR(50) NOT NULL
+    );
+    """)
+    cur.execute("SELECT COUNT(*) FROM admin;")
+    if cur.fetchone()[0] == 0:
+        cur.execute("INSERT INTO admin (username, password) VALUES ('admin', 'admin123');")
+        cn.commit()
+        print("✅ Default admin created: username=admin, password=admin123")
+
     # Customers Table
     cur.execute("""
     CREATE TABLE IF NOT EXISTS customers (

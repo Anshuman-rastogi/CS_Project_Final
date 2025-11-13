@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-from db_connect import connect_db
+from connect_db import connect_db
 
 def add_customer_window():
     win = Toplevel()
@@ -50,10 +50,7 @@ def add_customer_window():
             """, (name, phone, model, number))
             cn.commit()
             messagebox.showinfo("Success", "Customer added successfully!")
-            entry_name.delete(0, END)
-            entry_phone.delete(0, END)
-            entry_model.delete(0, END)
-            entry_number.delete(0, END)
+            win.destroy()
         except Exception as e:
             messagebox.showerror("Error", f"Failed to save customer: {e}")
         finally:
@@ -61,5 +58,6 @@ def add_customer_window():
             cn.close()
 
     Button(win, text="Save Customer", bg="#0A4D68", fg="white", width=15, command=save_customer).pack(pady=20)
+    entry_number.bind("<Return>", lambda event: save_customer()) # Bind Enter key to save_customer
     Button(win, text="Close", bg="#A4161A", fg="white", width=15, command=win.destroy).pack()
     win.mainloop()

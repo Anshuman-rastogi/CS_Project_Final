@@ -1,0 +1,21 @@
+==============================================
+            AutoCare Detailing Centre         
+==============================================
+Bill ID      : 33
+Date & Time  : 2025-11-13 19:08:26
+
+Customer ID  : 7
+Customer Name: 12
+Vehicle Model: hgbhdbw
+Vehicle No.  : h24h1
+----------------------------------------------
+Services Availed:
+  • Denting
+----------------------------------------------
+Total Amount : ₹3000.0
+----------------------------------------------
+
+Thank you for choosing AutoCare!
+We appreciate your trust in our services.
+
+==============================================
